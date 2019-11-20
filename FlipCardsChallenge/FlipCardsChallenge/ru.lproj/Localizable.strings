@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  FlipCardsChallenge
+
+  Created by Денис Андриевский on 11/19/19.
+  Copyright © 2019 Денис Андриевский. All rights reserved.
+*/
+"Game Rules" = "Правила Игры";
+"Your goal is to find pair to each card. At the beginning you \'ll be given a field of cards which are laid back and you should turn them over two. You win when all pairs are matched." = "Ваша задача - найти пару для каждой из карт. В начале Вам будет дано поле перевёрнутых карт, и вы должны переворачивать их по две. Игра заканчивается, когда все пары карт сопоставлены.";
+"Start Game" = "Начать Игру";
+"History" = "История";
+"Menu" = "Меню";
+"Score" = "Счёт";
+"Steps" = "Шаги";
+"Game Over" = "Игра Окончена";
+"Back to Menu" = "Вернутся в Меню";
+"Restart Game" = "Начать Заново";
+"Resume Game" = "Продолжить Игру";
+"Pause" = "Пауза";
