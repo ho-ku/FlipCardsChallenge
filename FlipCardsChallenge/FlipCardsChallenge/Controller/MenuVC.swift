@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MenuVC: UIViewController {
     
@@ -18,15 +19,26 @@ class MenuVC: UIViewController {
     
     private let blurEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     
+    // MARK:- Notification constant
+    let notification = NotificationCenter.default
+    
+    // MARK:- IBOutlets
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var gameRulesBtn: UIButton!
     @IBOutlet weak var startGameBtn: MenuButton!
     @IBOutlet weak var historyBtn: MenuButton!
     @IBOutlet weak var menuLabel: UILabel!
+    @IBOutlet weak var musicBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let _ = UserDefaults.standard.value(forKey: "playerState") {
+            musicBtn.setImage(UIImage(named: "soundOn"), for: .normal)
+        } else {
+            musicBtn.setImage(UIImage(named: "soundOff"), for: .normal)
+        }
+
         gameRulesBtn.setTitle("Game Rules".localized, for: .normal)
         startGameBtn.setTitle("Start Game".localized, for: .normal)
         historyBtn.setTitle("History".localized, for: .normal)
@@ -100,6 +112,9 @@ class MenuVC: UIViewController {
     }
     
     @IBAction func historyBtnPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "showHistory", sender: self)
+        
     }
     
     @IBAction func showRulesBtnPressed(_ sender: Any) {
@@ -121,6 +136,21 @@ class MenuVC: UIViewController {
             self.rulesView.transform = CGAffineTransform.init(translationX: 0, y: 800)
         }, completion: nil)
     }
+    
+    @IBAction func musicBtnPressed(_ sender: Any) {
+        
+        if musicBtn.imageView?.image!.pngData() == UIImage(named: "soundOn")?.pngData() {
+            notification.post(name: Notification.Name("StopMusic"), object: nil)
+            musicBtn.setImage(UIImage(named: "soundOff"), for: .normal)
+        } else {
+            notification.post(name: Notification.Name("PlayMusic"), object: nil)
+            musicBtn.setImage(UIImage(named: "soundOn"), for: .normal)
+        }
+        
+    }
+    
+    
+    
 }
 
 

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreData
+import AVFoundation
 
 class GameVC: UIViewController {
 
@@ -25,6 +27,15 @@ class GameVC: UIViewController {
     
     @IBOutlet weak var tigerImg: UIImageView!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var screenshotView: UIView!
+    @IBOutlet weak var pauseBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
+    
+    let appDelegate = (UIApplication.shared.delegate) as! AppDelegate
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    // MARK:- Notification constant
+    let notification = NotificationCenter.default
     
     private var gameField = Field()
     private var rotated = [Card]()
@@ -38,9 +49,12 @@ class GameVC: UIViewController {
     private var newGameBtn = UIButton()
     private var titleLabel = UILabel()
     private var resumeBtn = UIButton()
+    private var musicBtn = UIButton()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+      
         
         // MARK:- End Game Screen
         switch UIDevice.current.userInterfaceIdiom {
@@ -49,9 +63,10 @@ class GameVC: UIViewController {
             
             titleLabel = UILabel(frame: CGRect(x: menuView.frame.size.width/2-250, y: 10, width: 500, height: 40))
             titleLabel.font = UIFont(name: "Chalkboard SE", size: 34)?.bold()
-            backToMainMenuBtn = UIButton(frame: CGRect(x: 30, y: 110, width: menuView.frame.size.width-60, height: 40))
-            newGameBtn = UIButton(frame: CGRect(x: 30, y: 160, width: menuView.frame.size.width-60, height: 40))
+            backToMainMenuBtn = UIButton(frame: CGRect(x: 30, y: 90, width: menuView.frame.size.width-60, height: 40))
+            newGameBtn = UIButton(frame: CGRect(x: 30, y: 140, width: menuView.frame.size.width-60, height: 40))
             newGameBtn.titleLabel?.font = UIFont(name: "Chalkboard SE", size: 26)
+            musicBtn = UIButton(frame: CGRect(x: menuView.frame.size.width-68, y: 15, width: 54, height: 31))
             backToMainMenuBtn.titleLabel?.font = UIFont(name: "Chalkboard SE", size: 26)
         case .pad:
             menuView = UIView(frame: CGRect(x: Double(self.view.layer.frame.size.width)/6, y: Double(self.view.layer.frame.size.height)/6, width: Double(self.view.layer.frame.size.width)*2/3, height: Double(self.view.layer.frame.size.height)/1.5))
@@ -59,6 +74,7 @@ class GameVC: UIViewController {
             titleLabel.font = UIFont(name: "Chalkboard SE", size: 60)?.bold()
             backToMainMenuBtn = UIButton(frame: CGRect(x: 30, y: 230, width: menuView.frame.size.width-60, height: 90))
             newGameBtn = UIButton(frame: CGRect(x: 30, y: 340, width: menuView.frame.size.width-60, height: 90))
+            musicBtn = UIButton(frame: CGRect(x: menuView.frame.size.width-136, y: 40, width: 108, height: 62))
             newGameBtn.titleLabel?.font = UIFont(name: "Chalkboard SE", size: 36)
             backToMainMenuBtn.titleLabel?.font = UIFont(name: "Chalkboard SE", size: 36)
             
@@ -91,6 +107,15 @@ class GameVC: UIViewController {
         newGameBtn.layer.borderWidth = 2.0
         newGameBtn.addTarget(self, action: #selector(restartGame), for: .touchUpInside)
         menuView.addSubview(newGameBtn)
+        
+        musicBtn.setTitle("", for: .normal)
+        if let _ = UserDefaults.standard.value(forKey: "playerState") {
+            musicBtn.setImage(UIImage(named: "soundOn"), for: .normal)
+        } else {
+            musicBtn.setImage(UIImage(named: "soundOff"), for: .normal)
+        }
+        musicBtn.addTarget(self, action: #selector(musicBtnPressed), for: .touchUpInside)
+        
         
         
         let moveUpTransform = CGAffineTransform.init(translationX: 0, y: 800)
@@ -173,8 +198,34 @@ class GameVC: UIViewController {
         
         // MARK:- Win display
         if score == 60 {
+            
+            musicBtn.removeFromSuperview()
+            resumeBtn.removeFromSuperview()
+            
+            let img = UIImage(view: screenshotView)
+            let text = self.scoreLabel.text
+            
+                DispatchQueue.global(qos: .utility).async {
+                    
+                    let newGame = Game(entity: Game.entity(), insertInto: self.context)
+                    newGame.image = img.pngData()!
+                    newGame.title = text
+                    let date = Date()
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+                    newGame.date = dateFormatter.string(from: date)
+                    
+                    DispatchQueue.main.async {
+                        self.appDelegate.saveContext()
+                    }
+                    
+                }
+            
+            self.backBtn.isEnabled = false
+            self.pauseBtn.isEnabled = false
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.titleLabel.text = "Game Over".localized
+                
                 UIView.animate(withDuration: 1) {
                     self.menuView.alpha = 1
                     self.menuView.transform = .identity
@@ -216,7 +267,10 @@ class GameVC: UIViewController {
         self.performSegue(withIdentifier: "backToMenu", sender: self)
     }
     
+    // MARK:- Restart Game
     @objc func restartGame() {
+        self.pauseBtn.isEnabled = true
+        self.backBtn.isEnabled = true
         UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
             self.menuView.alpha = 0
             self.menuView.transform = CGAffineTransform.init(translationX: 0, y: 800)
@@ -230,11 +284,12 @@ class GameVC: UIViewController {
     
     @IBAction func pauseBtnPressed(_ sender: Any) {
         titleLabel.text = "Pause".localized
-        
+        self.pauseBtn.isEnabled = false
+        self.backBtn.isEnabled = false
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
             
-            resumeBtn = UIButton(frame: CGRect(x: 30, y: 210, width: menuView.frame.size.width-60, height: 40))
+            resumeBtn = UIButton(frame: CGRect(x: 30, y: 190, width: menuView.frame.size.width-60, height: 40))
             resumeBtn.titleLabel?.font = UIFont(name: "Chalkboard SE", size: 26)
         case .pad:
             resumeBtn = UIButton(frame: CGRect(x: 30, y: 450, width: menuView.frame.size.width-60, height: 90))
@@ -250,14 +305,20 @@ class GameVC: UIViewController {
         resumeBtn.addTarget(self, action: #selector(resume), for: .touchUpInside)
         menuView.addSubview(resumeBtn)
         
+        menuView.addSubview(musicBtn)
+        
         UIView.animate(withDuration: 1) {
             self.menuView.alpha = 1
             self.menuView.transform = .identity
         }
     }
     
+    // MARK:- Resume Game
     @objc func resume() {
+        self.pauseBtn.isEnabled = true
+        self.backBtn.isEnabled = true
         self.resumeBtn.removeFromSuperview()
+        self.musicBtn.removeFromSuperview()
         UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
             self.menuView.alpha = 0
             self.menuView.transform = CGAffineTransform.init(translationX: 0, y: 800)
@@ -274,10 +335,26 @@ class GameVC: UIViewController {
     
     
     @IBAction func backBtnPressed(_ sender: Any) {
-        
+    
         self.performSegue(withIdentifier: "backToMenu", sender: self)
         
     }
+    
+    @objc func musicBtnPressed() {
+        
+        if musicBtn.imageView?.image!.pngData() == UIImage(named: "soundOn")?.pngData() {
+            notification.post(name: Notification.Name("StopMusic"), object: nil)
+            musicBtn.setImage(UIImage(named: "soundOff"), for: .normal)
+            
+        } else {
+        
+            notification.post(name: Notification.Name("PlayMusic"), object: nil)
+            musicBtn.setImage(UIImage(named: "soundOn"), for: .normal)
+        }
+        
+    }
+    
+    
     
     
 }

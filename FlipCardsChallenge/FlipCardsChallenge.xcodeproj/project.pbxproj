@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373A6A342386E102002D2893 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A6A332386E102002D2893 /* HistoryVC.swift */; };
+		376407CC2388573700CC0F6B /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 376407CB2388573700CC0F6B /* song.mp3 */; };
 		376C07CE23847E4700237E84 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C07CD23847E4700237E84 /* UIFont+Ext.swift */; };
 		376C07D72384835C00237E84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 376C07D92384835C00237E84 /* Localizable.strings */; };
 		376C07DC238485E900237E84 /* FieldStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C07DB238485E900237E84 /* FieldStatus.swift */; };
@@ -14,6 +16,12 @@
 		3790E8372385AE7D0051848E /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3790E8362385AE7D0051848E /* GameVC.swift */; };
 		3790E8392385AFC80051848E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3790E8382385AFC80051848E /* Card.swift */; };
 		3790E83B2385AFD90051848E /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3790E83A2385AFD90051848E /* Image.swift */; };
+		37B204582386E7EA00002B6B /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B204572386E7EA00002B6B /* HistoryCell.swift */; };
+		37B2045B2386EDF200002B6B /* Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37B204592386EDF200002B6B /* Game.xcdatamodeld */; };
+		37B204642386EEBD00002B6B /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B204622386EEBD00002B6B /* Game+CoreDataProperties.swift */; };
+		37B204652386EEBD00002B6B /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B204632386EEBD00002B6B /* Game+CoreDataClass.swift */; };
+		37B204672386F47000002B6B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B204662386F47000002B6B /* UIView+Ext.swift */; };
+		37B3CF3F2389A6C0007E5854 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B3CF3E2389A6C0007E5854 /* MusicVC.swift */; };
 		37DD577523806DA000651BC3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DD577423806DA000651BC3 /* String+Ext.swift */; };
 		37DE1718238077E400100E81 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE1717238077E400100E81 /* MenuButton.swift */; };
 		37E16CFA23804E6D00825001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E16CF923804E6D00825001 /* AppDelegate.swift */; };
@@ -22,11 +30,11 @@
 		37E16D0123804E6D00825001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E16CFF23804E6D00825001 /* Main.storyboard */; };
 		37E16D0323804E6E00825001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E16D0223804E6E00825001 /* Assets.xcassets */; };
 		37E16D0623804E6E00825001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E16D0423804E6E00825001 /* LaunchScreen.storyboard */; };
-		B656E6374A1970EA7D9872CD /* Pods_FlipCardsChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6C1B3D382D21D992FFE614 /* Pods_FlipCardsChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03637DFCDA1A24D69E2AFBFF /* Pods-FlipCardsChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCardsChallenge.debug.xcconfig"; path = "Target Support Files/Pods-FlipCardsChallenge/Pods-FlipCardsChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		373A6A332386E102002D2893 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		376407CB2388573700CC0F6B /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		376C07CD23847E4700237E84 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		376C07D82384835C00237E84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		376C07DA2384836600237E84 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -35,6 +43,12 @@
 		3790E8362385AE7D0051848E /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		3790E8382385AFC80051848E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3790E83A2385AFD90051848E /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		37B204572386E7EA00002B6B /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		37B2045A2386EDF200002B6B /* Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Game.xcdatamodel; sourceTree = "<group>"; };
+		37B204622386EEBD00002B6B /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		37B204632386EEBD00002B6B /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
+		37B204662386F47000002B6B /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		37B3CF3E2389A6C0007E5854 /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
 		37DD577423806DA000651BC3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		37DE1717238077E400100E81 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		37E16CF623804E6D00825001 /* FlipCardsChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipCardsChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,8 +59,6 @@
 		37E16D0223804E6E00825001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37E16D0523804E6E00825001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37E16D0723804E6E00825001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C6C1B3D382D21D992FFE614 /* Pods_FlipCardsChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlipCardsChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7456FC1282E90424ECCB1D9 /* Pods-FlipCardsChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCardsChallenge.release.xcconfig"; path = "Target Support Files/Pods-FlipCardsChallenge/Pods-FlipCardsChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +66,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B656E6374A1970EA7D9872CD /* Pods_FlipCardsChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		376407CA2388572100CC0F6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37E16D0223804E6E00825001 /* Assets.xcassets */,
+				376407CB2388573700CC0F6B /* song.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		37DD577323806D8B00651BC3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				37DD577423806DA000651BC3 /* String+Ext.swift */,
 				376C07CD23847E4700237E84 /* UIFont+Ext.swift */,
+				37B204662386F47000002B6B /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -76,7 +97,6 @@
 				37E16CF823804E6D00825001 /* FlipCardsChallenge */,
 				37E16CF723804E6D00825001 /* Products */,
 				677051B245517A8996BFC2CF /* Pods */,
-				4883755EECD62459DD4D8A57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +118,8 @@
 				37E16D0F23804F5D00825001 /* View */,
 				37E16D0E23804F4700825001 /* Controller */,
 				37E16D0D23804F3500825001 /* Storyboard */,
-				37E16D0223804E6E00825001 /* Assets.xcassets */,
 				37E16D0723804E6E00825001 /* Info.plist */,
+				376407CA2388572100CC0F6B /* Resources */,
 				376C07D92384835C00237E84 /* Localizable.strings */,
 			);
 			path = FlipCardsChallenge;
@@ -119,6 +139,8 @@
 			children = (
 				37E16CFD23804E6D00825001 /* MenuVC.swift */,
 				3790E8362385AE7D0051848E /* GameVC.swift */,
+				373A6A332386E102002D2893 /* HistoryVC.swift */,
+				37B3CF3E2389A6C0007E5854 /* MusicVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				37DE1717238077E400100E81 /* MenuButton.swift */,
+				37B204572386E7EA00002B6B /* HistoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,27 +157,20 @@
 		37E16D1023804F6500825001 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				37B204632386EEBD00002B6B /* Game+CoreDataClass.swift */,
+				37B204622386EEBD00002B6B /* Game+CoreDataProperties.swift */,
 				376C07DB238485E900237E84 /* FieldStatus.swift */,
 				376C07DD2384860000237E84 /* Field.swift */,
 				3790E8382385AFC80051848E /* Card.swift */,
 				3790E83A2385AFD90051848E /* Image.swift */,
+				37B204592386EDF200002B6B /* Game.xcdatamodeld */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		4883755EECD62459DD4D8A57 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3C6C1B3D382D21D992FFE614 /* Pods_FlipCardsChallenge.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		677051B245517A8996BFC2CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03637DFCDA1A24D69E2AFBFF /* Pods-FlipCardsChallenge.debug.xcconfig */,
-				E7456FC1282E90424ECCB1D9 /* Pods-FlipCardsChallenge.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -166,11 +182,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37E16D0A23804E6E00825001 /* Build configuration list for PBXNativeTarget "FlipCardsChallenge" */;
 			buildPhases = (
-				FE774C4795587ADDCF1706A7 /* [CP] Check Pods Manifest.lock */,
 				37E16CF223804E6D00825001 /* Sources */,
 				37E16CF323804E6D00825001 /* Frameworks */,
 				37E16CF423804E6D00825001 /* Resources */,
-				68ABE9B0D1D14574EA6FF9B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376407CC2388573700CC0F6B /* song.mp3 in Resources */,
 				37E16D0623804E6E00825001 /* LaunchScreen.storyboard in Resources */,
 				376C07D72384835C00237E84 /* Localizable.strings in Resources */,
 				37E16D0323804E6E00825001 /* Assets.xcassets in Resources */,
@@ -229,64 +244,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		68ABE9B0D1D14574EA6FF9B0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlipCardsChallenge/Pods-FlipCardsChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlipCardsChallenge/Pods-FlipCardsChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipCardsChallenge/Pods-FlipCardsChallenge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE774C4795587ADDCF1706A7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FlipCardsChallenge-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		37E16CF223804E6D00825001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B204672386F47000002B6B /* UIView+Ext.swift in Sources */,
 				376C07CE23847E4700237E84 /* UIFont+Ext.swift in Sources */,
+				37B204652386EEBD00002B6B /* Game+CoreDataClass.swift in Sources */,
+				373A6A342386E102002D2893 /* HistoryVC.swift in Sources */,
 				37E16CFE23804E6D00825001 /* MenuVC.swift in Sources */,
+				37B204582386E7EA00002B6B /* HistoryCell.swift in Sources */,
 				376C07DE2384860000237E84 /* Field.swift in Sources */,
+				37B2045B2386EDF200002B6B /* Game.xcdatamodeld in Sources */,
 				376C07DC238485E900237E84 /* FieldStatus.swift in Sources */,
 				37E16CFA23804E6D00825001 /* AppDelegate.swift in Sources */,
 				37DE1718238077E400100E81 /* MenuButton.swift in Sources */,
 				37DD577523806DA000651BC3 /* String+Ext.swift in Sources */,
 				3790E8392385AFC80051848E /* Card.swift in Sources */,
 				3790E8372385AE7D0051848E /* GameVC.swift in Sources */,
+				37B3CF3F2389A6C0007E5854 /* MusicVC.swift in Sources */,
 				3790E83B2385AFD90051848E /* Image.swift in Sources */,
 				37E16CFC23804E6D00825001 /* SceneDelegate.swift in Sources */,
+				37B204642386EEBD00002B6B /* Game+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +419,6 @@
 		};
 		37E16D0B23804E6E00825001 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03637DFCDA1A24D69E2AFBFF /* Pods-FlipCardsChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,7 +438,6 @@
 		};
 		37E16D0C23804E6E00825001 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7456FC1282E90424ECCB1D9 /* Pods-FlipCardsChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +477,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37B204592386EDF200002B6B /* Game.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37B2045A2386EDF200002B6B /* Game.xcdatamodel */,
+			);
+			currentVersion = 37B2045A2386EDF200002B6B /* Game.xcdatamodel */;
+			path = Game.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 37E16CEE23804E6D00825001 /* Project object */;
 }
