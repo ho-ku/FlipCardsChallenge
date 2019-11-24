@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HTZ-B3-Hsx">
-    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="HTZ-B3-Hsx" customClass="MusicVC" customModule="FlipCardsChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Z4-Vv-2eX">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cc9-XK-xRm">
-                                <rect key="frame" x="673" y="502" width="20" height="20"/>
+                                <rect key="frame" x="396" y="177.66666666666663" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -40,17 +40,17 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="MenuVC" customModule="FlipCardsChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="pxO-87-mcH">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desk" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-SM-ENw">
-                                <rect key="frame" x="122.5" y="189.5" width="1121" height="645"/>
+                                <rect key="frame" x="-154.66666666666663" y="69.333333333333329" width="1121.3333333333333" height="236.33333333333337"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deck1" translatesAutoresizingMaskIntoConstraints="NO" id="Eub-gD-8ZO">
-                                <rect key="frame" x="17" y="30" width="360" height="100"/>
+                                <rect key="frame" x="61" y="30" width="230" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="n8V-EU-iOa">
                                         <variation key="heightClass=regular-widthClass=regular" constant="100"/>
@@ -61,11 +61,11 @@
                                 </constraints>
                             </imageView>
                             <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIP-QX-SzM">
-                                <rect key="frame" x="46" y="30" width="311" height="100"/>
+                                <rect key="frame" x="80" y="30" width="197" height="57"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpZ-aj-PBr">
-                                <rect key="frame" x="70" y="41" width="254" height="78"/>
+                                <rect key="frame" x="98.666666666666686" y="32.666666666666664" width="155" height="51.999999999999993"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="28"/>
                                 <state key="normal" title="Game Rules">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,24 +78,24 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger4" translatesAutoresizingMaskIntoConstraints="NO" id="xUX-5M-MKc">
-                                <rect key="frame" x="112" y="820" width="135" height="128"/>
+                                <rect key="frame" x="1.6666666666666714" y="170" width="135" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xUX-5M-MKc" secondAttribute="height" multiplier="135:128" id="h96-SI-kXj"/>
                                     <constraint firstAttribute="height" constant="128" id="mlr-bz-DGB"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger1" translatesAutoresizingMaskIntoConstraints="NO" id="mtF-ob-kJD">
-                                <rect key="frame" x="1233" y="0.0" width="133" height="158"/>
+                                <rect key="frame" x="679" y="0.0" width="133" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mtF-ob-kJD" secondAttribute="height" multiplier="133:158" id="8sy-IY-UbQ"/>
                                     <constraint firstAttribute="height" constant="158" id="rib-FT-0hm"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="It4-8h-jHj">
-                                <rect key="frame" x="292" y="445" width="782" height="264.5"/>
+                                <rect key="frame" x="181.66666666666666" y="139" width="448.66666666666674" height="157"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="712-d5-Xhe">
-                                        <rect key="frame" x="314.5" y="0.0" width="153" height="86.5"/>
+                                        <rect key="frame" x="179.33333333333334" y="0.0" width="90.333333333333343" height="51"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="36"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBM-ll-HBX" customClass="MenuButton" customModule="FlipCardsChallenge" customModuleProvider="target">
-                                        <rect key="frame" x="17" y="95.5" width="748" height="80"/>
+                                        <rect key="frame" x="0.0" y="60" width="448.66666666666669" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="m44-w9-mWl">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
@@ -122,7 +122,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irq-am-cz2" customClass="MenuButton" customModule="FlipCardsChallenge" customModuleProvider="target">
-                                        <rect key="frame" x="17" y="184.5" width="748" height="80"/>
+                                        <rect key="frame" x="0.0" y="113" width="448.66666666666669" height="44"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
                                         <state key="normal" title="History">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -141,7 +141,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m09-Re-CUQ">
-                                <rect key="frame" x="1150" y="882.5" width="200" height="113.5"/>
+                                <rect key="frame" x="715" y="300" width="81" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="81" id="35r-jM-aiI">
                                         <variation key="heightClass=regular-widthClass=regular" constant="200"/>
@@ -213,14 +213,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Zk0-gL-7j1" customClass="HistoryVC" customModule="FlipCardsChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KWT-lP-UZM">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Lcm-2W-xMD">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwO-st-jEQ">
-                                <rect key="frame" x="24" y="28" width="120" height="105"/>
+                                <rect key="frame" x="24" y="28.000000000000004" width="62" height="54.333333333333343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="BAx-yv-A8H">
                                         <variation key="heightClass=regular-widthClass=regular" constant="120"/>
@@ -234,22 +234,22 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mMr-XQ-eZ4">
-                                <rect key="frame" x="152" y="20" width="1174" height="944"/>
+                                <rect key="frame" x="94" y="20" width="678" height="334"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" id="i9K-Om-z5x" customClass="HistoryCell" customModule="FlipCardsChallenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1174" height="142"/>
+                                        <rect key="frame" x="0.0" y="28" width="678" height="93.333335876464844"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i9K-Om-z5x" id="iER-h6-ifg">
-                                            <rect key="frame" x="0.0" y="0.0" width="1174" height="142"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="674" height="93.333335876464844"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-EB-DSQ">
-                                                    <rect key="frame" x="16" y="10" width="724" height="122"/>
+                                                    <rect key="frame" x="16" y="10" width="467.66666666666669" height="73.333333333333329"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ab0-hm-sqy">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="122"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="73.333333333333329"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ab0-hm-sqy" secondAttribute="height" multiplier="180:73" id="IVf-eh-Yvb"/>
                                                                 <constraint firstAttribute="width" constant="180" id="iqd-Lh-iez">
@@ -258,10 +258,10 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="uIl-Ep-Cm3">
-                                                            <rect key="frame" x="315" y="0.0" width="409" height="122"/>
+                                                            <rect key="frame" x="195.00000000000003" y="0.0" width="272.66666666666674" height="73.333333333333329"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: xx, Steps: x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDz-nY-IRB">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="409" height="92.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="272.66666666666669" height="44"/>
                                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -270,7 +270,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZH-vd-UhL">
-                                                                    <rect key="frame" x="0.0" y="93.5" width="56" height="28.5"/>
+                                                                    <rect key="frame" x="0.0" y="45" width="38.333333333333336" height="28.333333333333329"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="28.333333333333336" id="V8W-Cb-58l"/>
                                                                     </constraints>
@@ -339,29 +339,29 @@
             <objects>
                 <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="sNJ-pe-jK3" customClass="GameVC" customModule="FlipCardsChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G2a-6C-p9H">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="XTy-Nq-uoN">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="field" translatesAutoresizingMaskIntoConstraints="NO" id="7Qa-oP-kuw">
-                                <rect key="frame" x="89.5" y="226.5" width="1187" height="571"/>
+                                <rect key="frame" x="53.333333333333314" y="17.666666666666657" width="705.33333333333348" height="339.66666666666674"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7Qa-oP-kuw" secondAttribute="height" multiplier="673:324" id="NVl-2n-kR7"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W91-tG-awr">
-                                <rect key="frame" x="322.5" y="317.5" width="721" height="389"/>
+                                <rect key="frame" x="182" y="65.333333333333329" width="448" height="244.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jC0-rM-gcs">
-                                        <rect key="frame" x="0.0" y="0.0" width="721" height="389"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="448" height="244.33333333333334"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-xg-Zae">
-                                                <rect key="frame" x="0.0" y="0.0" width="721" height="119"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="448" height="70.666666666666671"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-18-zUP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="119"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="70.666666666666671"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="OwA-18-zUP" secondAttribute="height" multiplier="106:75" id="gUq-kF-9dS"/>
                                                         </constraints>
@@ -371,21 +371,21 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-oi-UIZ">
-                                                        <rect key="frame" x="184.5" y="0.0" width="168" height="119"/>
+                                                        <rect key="frame" x="116" y="0.0" width="100" height="70.666666666666671"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="Tdo-Z4-VsA"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPN-Dx-W3W">
-                                                        <rect key="frame" x="368.5" y="0.0" width="168" height="119"/>
+                                                        <rect key="frame" x="232" y="0.0" width="100" height="70.666666666666671"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="Lzm-ex-mAP"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjJ-qi-Q33">
-                                                        <rect key="frame" x="552.5" y="0.0" width="168.5" height="119"/>
+                                                        <rect key="frame" x="348" y="0.0" width="100" height="70.666666666666671"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="TEP-rk-PSr"/>
@@ -399,10 +399,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jcf-VY-45p">
-                                                <rect key="frame" x="0.0" y="135" width="721" height="119"/>
+                                                <rect key="frame" x="0.0" y="86.666666666666671" width="448" height="71.000000000000014"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TS-dH-XI6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="119"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="71"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="9TS-dH-XI6" secondAttribute="height" multiplier="106:75" id="jMV-0u-tNp"/>
                                                         </constraints>
@@ -412,21 +412,21 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4t-Zo-jcb">
-                                                        <rect key="frame" x="184.5" y="0.0" width="168" height="119"/>
+                                                        <rect key="frame" x="116" y="0.0" width="100" height="71"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="nQh-Rd-6sI"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCW-OW-ZD0">
-                                                        <rect key="frame" x="368.5" y="0.0" width="168" height="119"/>
+                                                        <rect key="frame" x="232" y="0.0" width="100" height="71"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="HYG-1a-WZb"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r3-sn-syC">
-                                                        <rect key="frame" x="552.5" y="0.0" width="168.5" height="119"/>
+                                                        <rect key="frame" x="348" y="0.0" width="100" height="71"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="PZF-SV-Rdf"/>
@@ -440,10 +440,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GKM-zm-DTh">
-                                                <rect key="frame" x="0.0" y="270" width="721" height="119"/>
+                                                <rect key="frame" x="0.0" y="173.66666666666669" width="448" height="70.666666666666686"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsE-aC-Z8h">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="119"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="70.666666666666671"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="JsE-aC-Z8h" secondAttribute="height" multiplier="106:75" id="EMx-dX-8wT"/>
                                                         </constraints>
@@ -453,21 +453,21 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8B-re-p9k">
-                                                        <rect key="frame" x="184.5" y="0.0" width="168" height="119"/>
+                                                        <rect key="frame" x="116" y="0.0" width="100" height="70.666666666666671"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="HRn-hl-g0T"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWg-UO-Z9m">
-                                                        <rect key="frame" x="368.5" y="0.0" width="168" height="119"/>
+                                                        <rect key="frame" x="232" y="0.0" width="100" height="70.666666666666671"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="lDJ-lE-oMg"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBt-mq-HmF">
-                                                        <rect key="frame" x="552.5" y="0.0" width="168.5" height="119"/>
+                                                        <rect key="frame" x="348" y="0.0" width="100" height="70.666666666666671"/>
                                                         <state key="normal" image="cardBack"/>
                                                         <connections>
                                                             <action selector="cardBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="fio-DV-rd7"/>
@@ -491,7 +491,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger3" translatesAutoresizingMaskIntoConstraints="NO" id="zJ1-dL-cfY">
-                                <rect key="frame" x="1181" y="801.5" width="185" height="186.5"/>
+                                <rect key="frame" x="685" y="210" width="127" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zJ1-dL-cfY" secondAttribute="height" multiplier="127:128" id="QJ4-ku-pxw"/>
                                     <constraint firstAttribute="width" constant="127" id="pFA-q5-U4a">
@@ -500,7 +500,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deck1" translatesAutoresizingMaskIntoConstraints="NO" id="jFv-9L-mPA">
-                                <rect key="frame" x="183" y="903" width="1000" height="121"/>
+                                <rect key="frame" x="133" y="309" width="546" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="546" id="5s3-hg-Jav">
                                         <variation key="heightClass=regular-widthClass=regular" constant="1000"/>
@@ -509,7 +509,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: xx, Steps: x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4t-ji-ne2">
-                                <rect key="frame" x="314" y="911.5" width="738" height="96.5"/>
+                                <rect key="frame" x="204.66666666666663" y="321" width="403" height="44"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -518,7 +518,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9z-fK-ZQk">
-                                <rect key="frame" x="1202" y="16" width="140" height="140"/>
+                                <rect key="frame" x="714" y="16" width="74" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="o9z-fK-ZQk" secondAttribute="height" multiplier="1:1" id="9ls-rY-P7R"/>
                                     <constraint firstAttribute="height" constant="74" id="Yni-AR-t2T">
@@ -526,13 +526,13 @@
                                     </constraint>
                                 </constraints>
                                 <color key="tintColor" red="0.94901960780000005" green="0.59215686270000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="pause" backgroundImage="pause"/>
+                                <state key="normal" backgroundImage="pause"/>
                                 <connections>
                                     <action selector="pauseBtnPressed:" destination="sNJ-pe-jK3" eventType="touchUpInside" id="siC-4R-nx7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlq-px-59n">
-                                <rect key="frame" x="24" y="28" width="120" height="105"/>
+                                <rect key="frame" x="24" y="28.000000000000004" width="62" height="54.333333333333343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tlq-px-59n" secondAttribute="height" multiplier="8:7" id="M23-Ub-92f"/>
                                     <constraint firstAttribute="width" constant="62" id="R8t-7h-99A">
@@ -592,6 +592,7 @@
                         <outlet property="pauseBtn" destination="o9z-fK-ZQk" id="Vsw-eW-OOj"/>
                         <outlet property="scoreLabel" destination="m4t-ji-ne2" id="ouF-mq-3G0"/>
                         <outlet property="screenshotView" destination="W91-tG-awr" id="gXb-xg-3Fl"/>
+                        <outlet property="stack" destination="jC0-rM-gcs" id="Vq3-Lb-86Q"/>
                         <outlet property="tigerImg" destination="zJ1-dL-cfY" id="KIM-GT-TCT"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="backToMenu" id="pFx-sT-DcZ"/>
                     </connections>
@@ -603,16 +604,16 @@
     </scenes>
     <resources>
         <image name="back" width="640" height="360"/>
-        <image name="back-1" width="306.5" height="254.5"/>
-        <image name="cardBack" width="213" height="152"/>
+        <image name="back-1" width="306.66665649414062" height="254.66667175292969"/>
+        <image name="cardBack" width="213.33332824707031" height="152"/>
         <image name="deck1" width="98" height="57"/>
-        <image name="desk" width="560.5" height="501.5"/>
-        <image name="field" width="240" height="143"/>
-        <image name="pause" width="306.5" height="254.5"/>
-        <image name="soundOn" width="145.5" height="82.5"/>
+        <image name="desk" width="560.66668701171875" height="501.66665649414062"/>
+        <image name="field" width="240" height="143.33332824707031"/>
+        <image name="pause" width="306.66665649414062" height="254.66667175292969"/>
+        <image name="soundOn" width="145.66667175292969" height="82.666664123535156"/>
         <image name="tiger1" width="48" height="69"/>
-        <image name="tiger3" width="42" height="59"/>
-        <image name="tiger4" width="52" height="59"/>
+        <image name="tiger3" width="42.333332061767578" height="59"/>
+        <image name="tiger4" width="52.333332061767578" height="59.333332061767578"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pFx-sT-DcZ"/>

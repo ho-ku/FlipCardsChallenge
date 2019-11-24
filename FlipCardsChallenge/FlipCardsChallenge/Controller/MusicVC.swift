@@ -11,7 +11,7 @@ import AVFoundation
 
 class MusicVC: UIViewController {
 
-    var player = AVAudioPlayer()
+    var player: AVAudioPlayer!
     let ncObserver = NotificationCenter.default
     
     override func viewDidLoad() {

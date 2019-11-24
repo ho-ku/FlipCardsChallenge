@@ -65,8 +65,8 @@ class MenuVC: UIViewController {
             closeBtn = UIButton(frame: CGRect(x: rulesView.frame.size.width-75, y: 20, width: 45, height: 45))
             titleLabel = UILabel(frame: CGRect(x: rulesView.frame.size.width/2-400, y: 10, width: 800, height: 150))
             titleLabel.font = UIFont(name: "Chalkboard SE", size: 60)?.bold()
-            rulesLabel = UILabel(frame: CGRect(x: 60, y: 40, width: rulesView.frame.size.width-120, height: rulesView.frame.size.height-60))
-            rulesLabel.font = UIFont(name: "Chalkboard SE", size: 36)
+            rulesLabel = UILabel(frame: CGRect(x: 60, y: 80, width: rulesView.frame.size.width-120, height: rulesView.frame.size.height-60))
+            rulesLabel.font = UIFont(name: "Chalkboard SE", size: 30)
             
         default:
             fatalError("Unsupported device")
