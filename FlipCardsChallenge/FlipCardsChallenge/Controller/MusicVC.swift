@@ -11,7 +11,7 @@ import AVFoundation
 
 class MusicVC: UIViewController {
 
-    var player: AVAudioPlayer!
+    var player: AVAudioPlayer?
     let ncObserver = NotificationCenter.default
     
     override func viewDidLoad() {
@@ -49,8 +49,11 @@ class MusicVC: UIViewController {
         do {
             let audioPath = Bundle.main.path(forResource: "song", ofType: "mp3")
             try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
-            player.numberOfLoops = -1
-            player.play()
+            if let pl = player {
+                pl.numberOfLoops = -1
+                pl.play()
+            }
+            
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -60,7 +63,10 @@ class MusicVC: UIViewController {
     @objc func stopMusic() {
         
         UserDefaults.standard.removeObject(forKey: "playerState")
-        player.stop()
+        if let pl = player {
+            pl.stop()
+        }
+        
   
     }
     
